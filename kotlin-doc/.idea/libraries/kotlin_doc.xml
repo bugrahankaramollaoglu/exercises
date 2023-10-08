@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="kotlin-doc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/1_helloWorld.jar!/" />
+      <root url="jar://$PROJECT_DIR$/2_variableTypes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/3_stringTemplates.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
