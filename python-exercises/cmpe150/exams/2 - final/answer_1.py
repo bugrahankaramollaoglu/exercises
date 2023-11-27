@@ -1,6 +1,7 @@
 def get_input_1():
     return 12, [4, 3, 1, 5, 3, 2, 9]
 
+
 def save_solution_1(output):
     file = open(f"output_1.txt", "w")
     if len(output) > 0:
@@ -8,9 +9,11 @@ def save_solution_1(output):
             file.write(",".join([str(x) for x in e]) + "\n")
     file.close()
 
+
 target, nums = get_input_1()
 
-#Your Code Here
+
+# Your Code Here
 def find_sublists(target, nums):
     def backtrack(start, curr_sum, curr_list):
         if curr_sum == target:
@@ -30,12 +33,15 @@ def find_sublists(target, nums):
     return result
 
 
+a = find_sublists(12, [4, 3, 1, 5, 3, 2, 9])
+print(a)
+
 # Example usage
 target = 10
 nums = [1, 2, 3, 4, 5]
 output = find_sublists(target, nums)
 
-#End of Your Code
+# End of Your Code
 
 try:
     save_solution_1(output)
