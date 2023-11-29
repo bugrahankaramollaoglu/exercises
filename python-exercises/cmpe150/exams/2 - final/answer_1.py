@@ -1,49 +1,44 @@
 def get_input_1():
-    return 12, [4, 3, 1, 5, 3, 2, 9]
+	return 12, [4, 3, 1, 5, 3, 2, 9]
 
 
 def save_solution_1(output):
-    file = open(f"output_1.txt", "w")
-    if len(output) > 0:
-        for e in output:
-            file.write(",".join([str(x) for x in e]) + "\n")
-    file.close()
+	file = open(f"output_1.txt", "w")
+	if len(output) > 0:
+		for e in output:
+			file.write(",".join([str(x) for x in e]) + "\n")
+	file.close()
 
 
 target, nums = get_input_1()
 
 
-# Your Code Here
+
+
+
+def get_all_subsets(input_list):
+	all_subsets = [[]]
+	for element in input_list:
+		current_subsets = [subset + [element] for subset in all_subsets]
+		all_subsets.extend(current_subsets)
+	return [tuple(subset) for subset in all_subsets]
+
+
 def find_sublists(target, nums):
-    def backtrack(start, curr_sum, curr_list):
-        if curr_sum == target:
-            result.append(curr_list[:])
-            return
-        elif curr_sum > target:
-            return
-
-        for i in range(start, len(nums)):
-            num = nums[i]
-            curr_list.append(num)
-            backtrack(i + 1, curr_sum + num, curr_list)
-            curr_list.pop()
-
-    result = []
-    backtrack(0, 0, [])
-    return result
+	subs = []
+	for i in range(len(nums)):
+		pass
 
 
-a = find_sublists(12, [4, 3, 1, 5, 3, 2, 9])
-print(a)
 
-# Example usage
-target = 10
-nums = [1, 2, 3, 4, 5]
+
+target = 12
+nums = [4, 3, 1, 5, 3, 2, 9]
 output = find_sublists(target, nums)
 
-# End of Your Code
+
 
 try:
-    save_solution_1(output)
+	save_solution_1(output)
 except:
-    pass
+	pass
