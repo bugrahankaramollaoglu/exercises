@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EasyAPI_kotlin</string>
+    <string name="click_to_fetch">Click to Fetch</string>
+</resources>

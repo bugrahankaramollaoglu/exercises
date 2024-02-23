@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/options_item2"
+        android:title="activity 2"></item>
+    <item
+        android:id="@+id/options_item3"
+        android:title="activity 3"></item>
+
+    <item android:title="others">
+
+        <menu>
+
+            <item android:id="@+id/other1" android:title="other 1" />
+            <item android:id="@+id/other2" android:title="other 2" />
+
+        </menu>
+
+    </item>
+
+</menu>

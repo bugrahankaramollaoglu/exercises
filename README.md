@@ -1,3 +1,3 @@
-# programming-language-exercises
+# exercises
 
-my exercises for the programming languages I learnt
+my exercises for android & programming languages
